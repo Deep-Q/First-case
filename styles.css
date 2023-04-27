@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+body {
+font-family: serif;
+margin: 10px;
+}
+
+.container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 16px;
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+padding: 20px 0;
+}
+
+.header {
+width: 95%;
+background-color: white;
+color:darkolivegreen;
+height: 50px;
+padding: 1px;
+margin: 20px auto;
+border-radius: 10px;
+box-shadow: 0px 5px 15px 0px rgb(194, 187, 187);
+}
+
+.box {
+height: 200px;
+width: 300px;
+background-color: white;
+padding: 20px 10px;
+border: 0;
+border-radius: 10px;
+box-shadow: 0px 5px 15px 0px gray;
+margin: 5px;
+}
+
+h1,h2,p, .button-reg, .button-ATK, .button-club, .button-getsetgo {
+text-align: center;
+}
+
+h1 {
+font-size: 40px;
+background: linear-gradient(to right, #ff01d5 0%, #631d3e 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+h2 {
+font-size: 20px;
+}
+
+.button-reg, .button-ATK, .button-club {
+color: white;
+background-color: rgb(18, 16, 149);
+height: 40px;
+margin: auto;
+padding: 0 30px;
+border: 0;
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.button-getsetgo {
+color: white;
+background-color: darkmagenta;
+height: 40px;
+margin: -10px auto 30px;
+padding: 0 30px;
+border-radius: 10px;
+border: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+button {
+cursor: pointer;
+}
+
+.button-reg span, .button-ATK span, .button-club span, .button-getsetgo span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button-reg span:after, .button-ATK span:after, .button-club span:after, .button-getsetgo span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button-reg:hover span, .button-ATK:hover span, .button-club:hover span, .button-getsetgo:hover span {
+padding-right: 25px;
+}
+
+.button-reg:hover span:after, .button-ATK:hover span:after, .button-club:hover span:after, .button-getsetgo:hover span:after {
+opacity: 1;
+right: 0;
+}
+
+a {
+color: #ffffff00;
+}
+
+a:hover {
+color:#ffffff00;
+}
